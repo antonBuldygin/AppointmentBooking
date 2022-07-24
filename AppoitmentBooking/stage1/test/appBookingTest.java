@@ -128,7 +128,7 @@ public class appBookingTest extends StageTest {
 
 //        for (String item : checkToDelete
 //        ) {
-//            System.out.println(item + " URA " + count++);
+//            System.out.println(item + count++);
 //
 //        }
 //        output = pr.execute("5").toLowerCase().trim();
