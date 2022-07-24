@@ -1,0 +1,12 @@
+type: edu
+files:
+- name: src/appBooking/db.mv.db.trace.db
+  visible: true
+- name: resources/application.properties
+  visible: true
+- name: src/appBooking/Main.java
+  visible: true
+- name: src/appBooking/db.mv.db.mv.db
+  visible: true
+- name: test/appBookingTest.java
+  visible: false

@@ -1,0 +1,7 @@
+# Project exclude paths
+/.gradle/
+/AppoitmentBooking/stage1/build/
+/AppoitmentBooking/stage1/out/
+/AppoitmentBooking/stage1/out/production/classes/
+/AppoitmentBooking/stage2/out/
+/AppoitmentBooking/stage2/out/production/classes/

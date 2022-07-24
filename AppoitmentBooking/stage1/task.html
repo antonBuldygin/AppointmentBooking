@@ -1,0 +1,75 @@
+<html>
+
+<h2>Task Description: </h2>
+
+<p>In our hospital, there are more and more patients.
+  The receptionist used to write down the visits on sticky notes.
+  Unfortunately, the sticky notes get lost or taken away by doctors.
+  The hospital director thinks that at the beginning a simple program for the receptionist will be sufficient.</p>
+
+<h2>Objectives</h2>
+<p>In this stage, your program should:
+<ul>
+  <li> Show user a menu.</li>
+  <li>Create a new appointment.</li><br>
+  <ul>
+ <li> Ask for the doctor's name.</li>
+ <li>Ask for the patient's name.</li>
+  <li>Ask for a date.</li></ul><br>
+  <li>Print all appointments.</li>
+  <li>Delete appointment.</li>
+</ul><br></p>
+<p> We will use database to store information and retrieve information.
+  The following tables “Doctors”, “Patients” and “Appointments” should be created using JDBC (Java Database Connectivity)
+  which is an API for connecting and executing queries on a database and SQL queries.</p>
+
+<p>
+<ul> <li> Use DriverManager class  to establish a database connection with the server via its getConnection() method.</li>
+ <li> Connection interface represents an established database connection (session) from which we can create statements to execute queries and retrieve results,
+   get metadata about the database, close connection, etc.</li>
+  <li> Use Statement and PreparedStatement   to execute static SQL query and parameterized SQL query, respectively. </li>
+</ul>
+</p>
+
+<p>“Doctors” table should have relationships one to->many “Appointment” table; “Patient” table should have relationships one to many “Appointment” table. Because one doctor can have many appointments as well as one patient can have many appointments to visit doctors.
+<br>
+  <br>So the algorithm of the stage1:</p>
+
+<ul>
+<li>1) Create a database</li>
+
+  <li> 2) Create tables</li></ul>
+
+<p>To create a new appointment:
+<ul>
+ <li> 1) Check if the doctor name exists in the "doctors" table. If it exists use its id number to create an appointment.
+   If not exist Insert doctor name in to “doctor” table and use the id number of the doctor to create anappointment. </li>
+
+  <li> 2) Check if the patient name exists in the "patients" table.
+    If it exists use its id number to create an appointment.
+    If not exist Insert patient name in to “patient ” table and use the id number of the patient to create an appointment;</li>
+
+  <li> 3) Insert new  appointment  in to “appointment” table</li>
+  <br>
+</ul>
+
+
+  Example of SQL query to create “Patients” table:</p>
+
+<p>"CREATE TABLE IF NOT EXISTS patients(
+
+idP BIGINT AUTO_INCREMENT PRIMARY KEY,
+
+patientName VARCHAR(255) NOT NULL )";
+
+<ul>
+
+<li>
+  To show appointments use SELECT SQL query.</li>
+  <li>To delete appointment use DELETE SQL query.</li>
+</ul>
+
+Examples
+The greater-than symbol followed by a space (> ) represents the user input. Note that it's not part of the input.
+</p>
+</html>
